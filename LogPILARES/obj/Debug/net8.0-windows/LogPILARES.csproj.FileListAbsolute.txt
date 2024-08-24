@@ -1,0 +1,16 @@
+C:\LogPILARES\LogPILARES\bin\Debug\net8.0-windows\LogPILARES.exe
+C:\LogPILARES\LogPILARES\bin\Debug\net8.0-windows\LogPILARES.deps.json
+C:\LogPILARES\LogPILARES\bin\Debug\net8.0-windows\LogPILARES.runtimeconfig.json
+C:\LogPILARES\LogPILARES\bin\Debug\net8.0-windows\LogPILARES.dll
+C:\LogPILARES\LogPILARES\bin\Debug\net8.0-windows\LogPILARES.pdb
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.Form1.resources
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.csproj.GenerateResource.cache
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.GeneratedMSBuildEditorConfig.editorconfig
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.AssemblyInfoInputs.cache
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.AssemblyInfo.cs
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.csproj.CoreCompileInputs.cache
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.dll
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\refint\LogPILARES.dll
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.pdb
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.genruntimeconfig.cache
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\ref\LogPILARES.dll
