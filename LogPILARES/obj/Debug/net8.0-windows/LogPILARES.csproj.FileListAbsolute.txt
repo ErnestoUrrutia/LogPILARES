@@ -14,3 +14,5 @@ C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\refint\LogPILARES.dll
 C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.pdb
 C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.genruntimeconfig.cache
 C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\ref\LogPILARES.dll
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.sourcelink.json
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.Properties.Resources.resources
