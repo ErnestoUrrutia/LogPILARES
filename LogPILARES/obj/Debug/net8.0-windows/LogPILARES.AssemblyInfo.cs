@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogPILARES")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87f5357e43819a8601f93b1fe7d2b1a0e894b40d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d8b6e3e2111e86a7d040fd30b2e8cff6bc3fdd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogPILARES")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogPILARES")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

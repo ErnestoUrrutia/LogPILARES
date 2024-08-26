@@ -35,7 +35,6 @@
             uToolStripMenuItem = new ToolStripMenuItem();
             contextMenuStrip3 = new ContextMenuStrip(components);
             uToolStripMenuItem1 = new ToolStripMenuItem();
-            label1 = new Label();
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
             button1 = new Button();
@@ -74,18 +73,6 @@
             uToolStripMenuItem1.Size = new Size(81, 22);
             uToolStripMenuItem1.Text = "u";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.White;
-            label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(112, 180);
-            label1.Name = "label1";
-            label1.Size = new Size(315, 28);
-            label1.TabIndex = 3;
-            label1.Text = "Ingresa tu folio para usar el equipo";
-            label1.Click += label1_Click;
-            // 
             // textBox1
             // 
             textBox1.Font = new Font("Arial Rounded MT Bold", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -113,7 +100,7 @@
             button1.BackColor = Color.White;
             button1.Font = new Font("Segoe UI", 15F);
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(112, 287);
+            button1.Location = new Point(111, 287);
             button1.Name = "button1";
             button1.Size = new Size(310, 42);
             button1.TabIndex = 6;
@@ -123,12 +110,14 @@
             // 
             // button2
             // 
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(749, 456);
+            button2.Font = new Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(745, 451);
             button2.Name = "button2";
-            button2.Size = new Size(28, 27);
+            button2.Size = new Size(32, 32);
             button2.TabIndex = 7;
+            button2.Text = "?";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
@@ -139,10 +128,9 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
-            Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Ciberescuela";
             WindowState = FormWindowState.Maximized;
             FormClosing += Form1_FormClosing;
             Load += Form1_Load;
@@ -159,7 +147,6 @@
         private ToolStripMenuItem uToolStripMenuItem;
         private ContextMenuStrip contextMenuStrip3;
         private ToolStripMenuItem uToolStripMenuItem1;
-        private Label label1;
         private TextBox textBox1;
         private PictureBox pictureBox1;
         private Button button1;

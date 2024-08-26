@@ -21,19 +21,18 @@ namespace LogPILARES
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-         //   Process.Start("cmd.exe", "/C taskkill /f /im explorer.exe");
-            label1.Left = (this.ClientSize.Width - label1.Width) / 2;
-            // Centrar el Label verticalmente
-            label1.Top = (this.ClientSize.Height - label1.Height) / 2;
+            //   Process.Start("cmd.exe", "/C taskkill /f /im explorer.exe");
+        
+            textBox1.Left = (this.ClientSize.Width - textBox1.Width) / 2;
+            textBox1.Top = (this.ClientSize.Height - textBox1.Height) / 2 +100;
 
-            textBox1.Left = (this.ClientSize.Width - label1.Width) / 2;
-            textBox1.Top = (this.ClientSize.Height - label1.Height) / 2 + 50;
+            button1.Left = (this.ClientSize.Width - button1.Width) / 2;
+            button1.Top = (this.ClientSize.Height - button1.Height) / 2 + 150;
 
-            button1.Left = (this.ClientSize.Width - label1.Width) / 2;
-            button1.Top = (this.ClientSize.Height - label1.Height) / 2 + 120;
+            button2.Left = (this.ClientSize.Width -button2.Width)-10;
+            button2.Top = (this.ClientSize.Height -button2.Height)-10;
+
             pictureBox1.Dock = DockStyle.Fill;
-
-            // Mantiene la relación de aspecto de la imagen
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
         }
         private void Form1_Resize(object sender, EventArgs e)
@@ -81,12 +80,19 @@ namespace LogPILARES
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide(); // Esconde el formulario actual
-            //Process.Start("cmd.exe", "/C start explorer.exe");
+           
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2(); // Crear una nueva instancia cada vez
+            form2.Show(); // Mostrar el formulario);
+            form2.TopMost = true;
         }
     }
 

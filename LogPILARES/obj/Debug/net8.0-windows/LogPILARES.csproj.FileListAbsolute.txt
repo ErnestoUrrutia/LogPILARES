@@ -16,3 +16,4 @@ C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.genruntimeconfig.ca
 C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\ref\LogPILARES.dll
 C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.sourcelink.json
 C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.Properties.Resources.resources
+C:\LogPILARES\LogPILARES\obj\Debug\net8.0-windows\LogPILARES.Form2.resources
