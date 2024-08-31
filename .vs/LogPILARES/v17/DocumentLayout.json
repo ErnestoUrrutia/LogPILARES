@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\LogPILARES\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|c:\\logpilares\\logpilares\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|solutionrelative:logpilares\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|c:\\logpilares\\logpilares\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|solutionrelative:logpilares\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|C:\\LogPILARES\\logpilares\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|solutionrelative:logpilares\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|c:\\logpilares\\logpilares\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|solutionrelative:logpilares\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|c:\\logpilares\\logpilares\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|solutionrelative:logpilares\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|c:\\logpilares\\logpilares\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|solutionrelative:logpilares\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|c:\\logpilares\\logpilares\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|solutionrelative:logpilares\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{377B28BC-270D-4C83-A3CE-5B597B16601A}|LogPILARES\\LogPILARES.csproj|c:\\logpilares\\logpilares\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +38,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\LogPILARES\\LogPILARES\\Form3.cs",
+              "RelativeDocumentMoniker": "LogPILARES\\Form3.cs",
+              "ToolTip": "C:\\LogPILARES\\LogPILARES\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "LogPILARES\\Form3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T06:18:34.649Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\LogPILARES\\LogPILARES\\Form2.cs",
               "RelativeDocumentMoniker": "LogPILARES\\Form2.cs",
@@ -51,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\LogPILARES\\LogPILARES\\Form2.cs",
               "RelativeDocumentMoniker": "LogPILARES\\Form2.cs",
@@ -63,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\LogPILARES\\LogPILARES\\Form1.cs",
               "RelativeDocumentMoniker": "LogPILARES\\Form1.cs",
@@ -75,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\LogPILARES\\LogPILARES\\Program.cs",
               "RelativeDocumentMoniker": "LogPILARES\\Program.cs",
@@ -88,20 +104,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\LogPILARES\\LogPILARES\\Form1.cs",
               "RelativeDocumentMoniker": "LogPILARES\\Form1.cs",
               "ToolTip": "C:\\LogPILARES\\LogPILARES\\Form1.cs",
               "RelativeToolTip": "LogPILARES\\Form1.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAkwF4AAAAhAAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAqwIIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T22:36:27.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\LogPILARES\\LogPILARES\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "LogPILARES\\Form1.Designer.cs",

@@ -37,7 +37,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.Highlight;
-            label1.Location = new Point(216, 208);
+            label1.Location = new Point(12, 82);
             label1.Name = "label1";
             label1.Size = new Size(194, 15);
             label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(584, 98);
+            textBox1.Size = new Size(584, 67);
             textBox1.TabIndex = 1;
             textBox1.Text = resources.GetString("textBox1.Text");
             // 

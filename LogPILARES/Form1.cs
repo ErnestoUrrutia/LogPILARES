@@ -1,6 +1,10 @@
+
+using MySql.Data.MySqlClient;
+using System;
 namespace LogPILARES
 {
     using System.Diagnostics;
+
     public partial class Form1 : Form
     {
         private bool isFullScreen = false;
@@ -79,7 +83,53 @@ namespace LogPILARES
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide(); // Esconde el formulario actual
+            string connectionString = "server=localhost;user=ernesto;database=Usuarios;port=3306;password=admin";
+
+            // Crear una conexión
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    // Abrir la conexión
+                    conn.Open();
+
+                    Console.WriteLine("Conexión exitosa.");
+
+                    // Obtener el folio desde el TextBox
+                    string folio = textBox1.Text;
+
+                    // Comando SQL con parámetro
+                    string query = "SELECT nombre FROM Registros WHERE Folio = @Folio";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Folio", folio);
+
+                    // Ejecutar el comando y leer el resultado
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        // Guardar el nombre en una variable
+                        string nombre = reader["nombre"].ToString();
+
+                        // Mostrar el nombre o usarlo en tu lógica
+                        MessageBox.Show("Nombre encontrado: " + nombre);
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Folio no encontrado.");
+                        
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+
+             // Esconde el formulario actual
            
         }
 

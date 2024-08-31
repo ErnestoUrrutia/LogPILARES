@@ -1,0 +1,7 @@
+C:\LogPILARES\LogPILARES\bin\Release\net8.0-windows\publish\win-x64\LogPILARES.pdb
+C:\LogPILARES\LogPILARES\bin\Release\net8.0-windows\publish\win-x64\comerr64.dll
+C:\LogPILARES\LogPILARES\bin\Release\net8.0-windows\publish\win-x64\gssapi64.dll
+C:\LogPILARES\LogPILARES\bin\Release\net8.0-windows\publish\win-x64\k5sprt64.dll
+C:\LogPILARES\LogPILARES\bin\Release\net8.0-windows\publish\win-x64\krb5_64.dll
+C:\LogPILARES\LogPILARES\bin\Release\net8.0-windows\publish\win-x64\krbcc64.dll
+C:\LogPILARES\LogPILARES\bin\Release\net8.0-windows\publish\win-x64\LogPILARES.exe
