@@ -1,9 +1,18 @@
 
 using MySql.Data.MySqlClient;
 using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+
+using System;
 namespace LogPILARES
 {
     using System.Diagnostics;
+    using System.Net.Sockets;
+    using System.Net;
+    using System.Text;
 
     public partial class Form1 : Form
     {
@@ -12,7 +21,8 @@ namespace LogPILARES
         {
             InitializeComponent();
             SetFullScreen();
-            this.Resize += new EventHandler(Form1_Resize);
+           
+            Task.Run(() => conectar());
         }
 
 
@@ -39,11 +49,7 @@ namespace LogPILARES
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
         }
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-            // Centrar el Label horizontalmente
-
-        }
+      
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             // Convertir el texto a mayúsculas
@@ -74,11 +80,7 @@ namespace LogPILARES
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -113,7 +115,7 @@ namespace LogPILARES
 
                         // Mostrar el nombre o usarlo en tu lógica
                         MessageBox.Show("Nombre encontrado: " + nombre);
-                        this.Hide();
+                        esconderBloqueo();
                     }
                     else
                     {
@@ -137,12 +139,121 @@ namespace LogPILARES
         {
 
         }
-
+        public void esconderBloqueo()
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(esconderBloqueo));
+            }
+            else
+            {
+                this.Visible = false;
+            }
+        }
+        public void mostrarBloqueo()
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(mostrarBloqueo));
+            }
+            else
+            {
+                this.Visible = true;
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2(); // Crear una nueva instancia cada vez
             form2.Show(); // Mostrar el formulario);
             form2.TopMost = true;
+        }
+        public void conectar()
+        {
+            
+
+           string serverIP = "127.0.0.1";  // Dirección IP del servidor
+            int port = 12345;
+            IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse(serverIP), port);
+            Socket clientSocket = null;
+
+            int retryCount = 5;  // Número de intentos de reconexión iniciales
+            int delay = 2000;    // Tiempo de espera entre intentos en milisegundos
+
+            while (true)
+            {
+                try
+                {
+                    clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+                    // Intentar conectar al servidor con reintentos
+                    while (true)
+                    {
+                        try
+                        {
+                            clientSocket.Connect(endPoint);
+                            Console.WriteLine("Conectado al servidor.");
+                            break;  // Si la conexión tiene éxito, salir del bucle de reintento
+                        }
+                        catch (SocketException ex)
+                        {
+
+
+
+
+                            Console.WriteLine("Reintentando en 2 segundos...");
+                            Thread.Sleep(delay);
+                        }
+                    }
+
+                    // Enviar mensaje al servidor
+                    string clientMessage = "Hola, servidor!";
+                    byte[] clientMessageBytes = Encoding.ASCII.GetBytes(clientMessage);
+                    clientSocket.Send(clientMessageBytes);
+                    Console.WriteLine("Mensaje enviado al servidor: " + clientMessage);
+
+                    // Recibir múltiples mensajes del servidor
+                    while (true)
+                    {
+                        byte[] buffer = new byte[1024];
+                        int receivedBytes = clientSocket.Receive(buffer);
+                        string serverMessage = Encoding.ASCII.GetString(buffer, 0, receivedBytes);
+                        if (serverMessage == "Ocultar")
+                        {
+                            esconderBloqueo();
+                        }
+                        if (serverMessage == "Mostrar")
+                        {
+                            mostrarBloqueo();
+                        }
+                        Console.WriteLine("Mensaje recibido del servidor: " + serverMessage);
+                    }
+
+                    // Simular una desconexión cerrando el socket (en un escenario real, esto ocurriría cuando el servidor cierra la conexión)
+                    clientSocket.Shutdown(SocketShutdown.Both);
+                    clientSocket.Close();
+                    Console.WriteLine("Conexión cerrada por el servidor. Reintentando conexión...");
+
+                    // Dormir antes de reintentar la conexión
+                    Thread.Sleep(delay);
+                }
+                catch (SocketException ex)
+                {
+                    Console.WriteLine("Error de socket durante la comunicación: " + ex.Message);
+                    Console.WriteLine("Reintentando conexión...");
+                    Thread.Sleep(delay);  // Esperar antes de reintentar la conexión
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error inesperado: " + ex.Message);
+                }
+                finally
+                {
+                    if (clientSocket != null && clientSocket.Connected)
+                    {
+                        clientSocket.Close();
+                    }
+                }
+            }
         }
     }
 

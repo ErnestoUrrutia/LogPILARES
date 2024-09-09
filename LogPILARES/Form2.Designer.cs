@@ -45,10 +45,12 @@
             // 
             // textBox1
             // 
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Location = new Point(12, 12);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Hola";
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(584, 67);
             textBox1.TabIndex = 1;
@@ -58,7 +60,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(657, 146);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9F, FontStyle.Italic);
